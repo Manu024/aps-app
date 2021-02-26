@@ -1,0 +1,35 @@
+.Modal, .ModalEnabled{
+  width: 40%;
+  height: auto;
+  position: fixed;
+  top: -40%;
+  left: 30%;
+  background-color: #fff;
+  border: 1px solid black;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+
+.button {
+  background-color: rgba(253, 31, 68, 0.966);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin: 12px;
+  padding: 8px;
+  line-height: 2;
+  cursor: pointer;
+  font-family: Helvetica;
+}
+
+.ModalEnabled {
+    top: 40%;
+}
+
+@media (max-width: 600px) {
+  .ModalEnabled{
+      width: 90%;
+      left: 5%;
+  }
+}

@@ -1,0 +1,90 @@
+.EditableForm {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(245, 240, 240);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255) 30%,
+    rgb(245, 240, 240) 100%
+  );
+}
+
+.editIcon {
+  width: 24px;
+  height: auto;
+  padding: 4px;
+}
+
+.editIcon:hover {
+  cursor: pointer;
+  background-color: rgb(192, 184, 184);
+  border-radius: 5px;
+}
+
+.hr {
+  margin: 0;
+  width: 70%;
+}
+
+.Form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    text-align: left;
+    font-family: Helvetica;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(172, 169, 169, 0.651);
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.input:focus, .input:hover {
+    border-bottom: 2px solid #FD274B;
+}
+
+.Btn {
+    background-color: #FD274B;
+    margin-left: 65%;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+}
+
+.Btn:hover {
+    background-color: #bd1834fc;
+}
+
+.disabled {
+    background-color: #bd1834fc;
+    color: rgba(255, 255, 255, 0.809);
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .EditableForm, .Form {
+      width: 90%;
+  }
+}
+
+@media  (min-width: 992px) {
+  .Btn {
+      width: 25%;
+  }
+}

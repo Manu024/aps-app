@@ -1,0 +1,71 @@
+.sideBar, .sideBarEnabled {
+  width: 60%;
+  min-height: 100%;
+  position: fixed;
+  left: 102%;
+  bottom: 0%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.59);
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+
+.sideBarText {
+  background-color: rgba(253, 31, 68, 0.966);
+  color: rgb(255, 255, 255);
+  margin: 8px;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.welcomeText {
+    margin: 8px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgba(253, 31, 68, 0.966);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sideBarEnabled {
+    left: 45%;
+}
+
+@media (max-width: 600px) {
+    .sideBar, .sideBarEnabled {
+        width: 55%;
+      }
+}
